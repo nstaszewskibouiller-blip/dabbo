@@ -6,85 +6,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Tailwind -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font Awesome (logos réseaux) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Font Awesome (icônes) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body class="bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white">
 
-  <!-- HEADER -->
-  <header class="p-6 flex items-center justify-center space-x-4">
-    <img src="logo.png.jpg" class="w-16 h-16 rounded-full" alt="Outside Zone">
-    <h1 class="text-3xl font-bold">Outside Zone</h1>
-  </header>
+<!-- HEADER -->
+<header class="text-center py-16">
+  <!-- LOGO -->
+  <img src="logo.png.jpg"
+       alt="Outside Zone"
+       class="mx-auto w-32 mb-6 drop-shadow-lg">
 
-  <!-- HERO -->
-  <section class="text-center py-14 px-4">
-    <h2 class="text-4xl font-extrabold mb-4">Cartes Urbex & Aventure</h2>
-    <p class="text-gray-300 max-w-xl mx-auto">
-      Spots abandonnés, lieux secrets et zones outdoor sélectionnées par Outside Zone.
+  <h1 class="text-5xl font-extrabold tracking-wide">
+    OUTSIDE <span class="text-orange-400">ZONE</span>
+  </h1>
+  <p class="text-gray-400 mt-4 text-lg">
+    Urbex • Sport • Randonnée
+  </p>
+</header>
+
+<!-- CARTES URBEX -->
+<section class="max-w-4xl mx-auto p-6">
+  <h2 class="text-3xl font-bold mb-8 text-center">
+    🗺️ Cartes Urbex
+  </h2>
+
+  <!-- GRATUIT -->
+  <div class="bg-gray-800/80 backdrop-blur rounded-xl p-6 mb-6 border border-gray-700">
+    <h3 class="text-2xl font-bold text-green-400 mb-2">
+      Carte gratuite
+    </h3>
+    <p class="text-gray-300 mb-4">
+      Accès libre à une sélection de spots.
     </p>
-  </section>
+    <a href="https://earth.google.com/earth/d/18QZd-sMD65sMrCLAirFNuQNSdofMTEEQ"
+       target="_blank"
+       class="inline-block bg-green-500 hover:bg-green-600 px-6 py-3 rounded text-black font-bold">
+      Accéder gratuitement
+    </a>
+  </div>
 
-  <!-- CARTES -->
-  <section class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 px-6">
+  <!-- PREMIUM -->
+  <div class="bg-gray-800/80 backdrop-blur rounded-xl p-6 border border-yellow-500/40">
+    <h3 class="text-2xl font-bold text-yellow-400 mb-2">
+      Carte Premium – 5 €
+    </h3>
+    <p class="text-gray-300 mb-4">
+      Carte complète avec spots exclusifs.
+      <br>
+      <span class="text-sm text-gray-400">
+        Après paiement, contacte-nous sur TikTok avec une preuve.
+      </span>
+    </p>
+    <a href="https://www.paypal.me/nsb611134/5"
+       target="_blank"
+       class="inline-block bg-yellow-400 hover:bg-yellow-500 px-6 py-3 rounded text-black font-bold">
+      Payer 5 €
+    </a>
+  </div>
+</section>
 
-    <!-- GRATUIT -->
-    <div class="bg-gray-800 rounded-xl p-6 shadow-lg">
-      <h3 class="text-2xl font-bold mb-2">Carte gratuite</h3>
-      <p class="text-gray-400 mb-4">
-        Accès libre à une sélection de spots.
-      </p>
+<!-- DÉFI 30 JOURS -->
+<section class="max-w-4xl mx-auto p-6 mt-14">
+  <div class="bg-gradient-to-br from-orange-500/20 to-red-500/10 rounded-xl p-8 border border-orange-400/30">
+    <h2 class="text-3xl font-bold text-orange-400 text-center mb-6">
+      🔥 Défi Anti-Écrans – 30 jours
+    </h2>
 
-      <a href="https://earth.google.com/earth/d/18QZd-sMD65sMrCLAirFNuQNSdofMTEEQ"
+    <img src="defi 30 jours.jpg"
+         class="rounded-xl mx-auto mb-6 max-h-96 object-cover">
+
+    <ul class="text-gray-200 mb-6 space-y-2 text-lg">
+      <li>✔️ Moins d’écrans</li>
+      <li>✔️ Plus de discipline</li>
+      <li>✔️ Vie maximisée</li>
+    </ul>
+
+    <p class="text-center text-gray-300 mb-6">
+      Après l’achat, contacte-nous sur <b>TikTok</b> avec une
+      <b>preuve de paiement</b>.
+      <br>
+      (Important pour récupérer l’accès si tu le perds)
+    </p>
+
+    <div class="text-center">
+      <a href="https://www.paypal.me/ThelioSauvez/7.5"
          target="_blank"
-         class="inline-block bg-green-500 hover:bg-green-600 text-black font-bold py-2 px-5 rounded">
-        Accéder
+         class="bg-orange-500 hover:bg-orange-600 px-10 py-4 rounded-full text-black font-extrabold text-lg shadow-lg">
+        Acheter – 7,50 €
       </a>
     </div>
+  </div>
+</section>
 
-    <!-- PREMIUM -->
-    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-yellow-400">
-      <h3 class="text-2xl font-bold mb-2">Carte Premium</h3>
-      <p class="text-gray-400 mb-4">
-        Accès complet aux spots exclusifs.
-      </p>
+<!-- RÉSEAUX -->
+<footer class="text-center py-14 mt-16 border-t border-gray-700">
+  <p class="text-gray-400 mb-6 text-lg">
+    Rejoins-nous
+  </p>
 
-      <a href="https://www.paypal.me/nsb611134/5"
-         class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-5 rounded">
-        Payer 5 €
-      </a>
+  <div class="flex justify-center gap-10 text-3xl">
+    <a href="https://www.tiktok.com/@nsb.ch?_r=1&_t=ZN-92SNPaDHBtG"
+       target="_blank"
+       class="hover:text-pink-500 transition">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
 
-      <p class="text-xs text-gray-400 mt-4 leading-relaxed">
-        Après paiement, vous aurez accès à la carte premium.<br>
-        ⚠️ En cas de perte d’accès, contactez-nous sur
-        <strong>TikTok</strong> avec une <strong>preuve de paiement</strong>
-        pour que nous vous redonnions la carte.
-      </p>
-    </div>
+    <a href="https://www.instagram.com/thelio_es_"
+       target="_blank"
+       class="hover:text-purple-500 transition">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
 
-  </section>
+    <a href="https://discord.gg/k4yetZJQg"
+       target="_blank"
+       class="hover:text-indigo-400 transition">
+      <i class="fa-brands fa-discord"></i>
+    </a>
+  </div>
 
-  <!-- FOOTER -->
-  <footer class="mt-16 p-6 text-center text-gray-400">
-    <p class="mb-4">Rejoins-nous</p>
-
-    <div class="flex justify-center space-x-8 text-3xl">
-      <a href="https://www.tiktok.com/@nsb.ch?_r=1&_t=ZN-92SNPaDHBtG" target="_blank" class="hover:text-pink-500">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
-      <a href="https://www.instagram.com/thelio_es_?igsh=MTc0NnpiMGw1ZG50aw==" target="_blank" class="hover:text-purple-500">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://discord.gg/k4yetZJQg" target="_blank" class="hover:text-indigo-400">
-        <i class="fa-brands fa-discord"></i>
-      </a>
-    </div>
-
-    <p class="mt-6 text-sm">© Outside Zone</p>
-  </footer>
+  <p class="text-gray-500 mt-8">
+    © Outside Zone
+  </p>
+</footer>
 
 </body>
 </html>
